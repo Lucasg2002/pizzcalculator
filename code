@@ -1,0 +1,34 @@
+<!DOCTYPE html>   
+   <html lang="nl"><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>pizzacalculator 1.0 - basis</title>
+</head>
+<body>
+	<body style="background-color:powderblue;">
+	<img src="th.jpg" alt="th" class= "center">
+	
+  <h1>Pizzacalculator 1.0 - basis</h1>
+  <script>
+//hoeveel pizzas je wilt  
+var total = 0;
+var nummer1 = prompt("Hoeveel small pizza's wilt u?, ze kosten €5,- per stuk(20cm)");
+var nummer2 = prompt("Hoeveel Medium pizzas wilt u?, Ze kosten €7,- per stuk(25cm)");
+var nummer3 = prompt("Hoeveel Large pizzas wilt u?, ze kosten €9,- per stuk(35cm)");
+// hoe duur de pizza's kosten
+const small = 5;
+const medium = 7;
+const large = 9;
+
+document.write("Aantal small pizzas(20cm): ", small,"<br>"); +document.write("Totaal:",small * nummer1 , " ,- Euro");  
+document.write("<br>","Aantal medium pizzas(25cm): ", medium,"<br>");+document.write("Totaal:",medium * nummer2 , " ,- Euro")
+document.write("<br>","Aantal large pizzas(35cm): ", large,"<br>");+document.write("Totaal:",large * nummer3 , " ,- Euro");
+
+//de rekening van heel de bestelling
+total = (small * nummer1 ) + (medium * nummer2 ) + (large * nummer3 ); 
+document.write("<br>"," De rekening is:",total," ,- euro");
+
+
+</script>
+</body></html>
+
+
